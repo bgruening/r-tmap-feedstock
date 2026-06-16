@@ -3,7 +3,7 @@
 
 package:
   name: r-tmap
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
@@ -31,7 +31,7 @@ requirements:
     - r-base64enc
     - r-classint >=0.4_3
     - r-cli
-    - r-cols4all >=0.8_1
+    - r-cols4all >=0.10
     - r-data.table
     - r-htmltools
     - r-htmlwidgets
@@ -53,7 +53,7 @@ requirements:
     - r-base64enc
     - r-classint >=0.4_3
     - r-cli
-    - r-cols4all >=0.8_1
+    - r-cols4all >=0.10
     - r-data.table
     - r-htmltools
     - r-htmlwidgets
@@ -77,19 +77,20 @@ test:
     - "\"%R%\" -e \"library('tmap')\""  # [win]
 
 about:
-  home: https://github.com/mtennekes/tmap
+  home: https://r-tmap.github.io/tmap/
+  dev_url: https://github.com/r-tmap/tmap
+  doc_url: https://cran.r-project.org/web/packages/tmap/tmap.pdf
   license: GPL-3.0-only
   summary: Thematic maps are geographical maps in which spatial data distributions are visualized. This package offers a flexible, layer-based, and easy to use approach to create thematic maps, such as choropleths and bubble maps.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
   description: Set of tools for reading and processing spatial data. The aim is to supply the workflow to create thematic maps. This package also facilitates 'tmap', the package for visualizing thematic maps.
-  doc_url: https://cran.r-project.org/web/packages/tmap/tmap.pdf
-  dev_url: https://github.com/mtennekes/tmap
 
 extra:
   recipe-maintainers:
-    - mxr-conda
     - conda-forge/r
+    - mxr-conda
     - agcopenhaver
     - oblute
     - tata17
