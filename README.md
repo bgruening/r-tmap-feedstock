@@ -3,13 +3,13 @@ About r-tmap-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tmap-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/mtennekes/tmap
+Home: https://r-tmap.github.io/tmap/
 
 Package license: GPL-3.0-only
 
 Summary: Thematic maps are geographical maps in which spatial data distributions are visualized. This package offers a flexible, layer-based, and easy to use approach to create thematic maps, such as choropleths and bubble maps.
 
-Development: https://github.com/mtennekes/tmap
+Development: https://github.com/r-tmap/tmap
 
 Documentation: https://cran.r-project.org/web/packages/tmap/tmap.pdf
 
