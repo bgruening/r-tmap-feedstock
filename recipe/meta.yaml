@@ -1,4 +1,4 @@
-{% set version = "4.4" %}
+{% set version = "4.4-1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tmap_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tmap/tmap_{{ version }}.tar.gz
-  sha256: 741b41211daee77932ee6446ec2db3919acf21a6d80dba6cd45e260690b061ab
+  sha256: cd3c0954ab881f6dcecaec888a0aa50cf855c9fece817960eeb9ab9556d0ccc3
 
 build:
   number: 0
